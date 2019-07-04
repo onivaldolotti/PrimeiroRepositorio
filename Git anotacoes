@@ -1,0 +1,31 @@
+git help
+
+git init > cria repositorio
+
+git add > adiciona arquivo
+
+git commit> abre editor de textos para alteracoes
+
+git commit -m " passa a mensagem do commit"
+
+git status> mostra se tem arquivos a serem commitados
+
+git log> mostra os commit feitos
+
+git push> Sincroniza com o repositorio remoto(Github)
+
+git push -u origin master> Primeira vez
+
+git add . > adiciona todos os arquivos de uma vez
+
+git remote >
+
+GIT WORKFLOW
+-editar
+-add
+-Commitar
+-Sincronizar com repositorio remoto
+
+git diff HEAD~1
+
+git pull
