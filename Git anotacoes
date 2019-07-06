@@ -28,4 +28,20 @@ GIT WORKFLOW
 
 git diff HEAD~1
 
+git diff <commit> <commit>
+
 git pull
+
+git checkout <commit> <file>
+
+git checkout -- <path ou file>
+
+git checkout -- . > desfaz as alteracoes do arquivo em stage
+
+git checkout HEAD> desfaz desdo ultimo commit
+
+git revert <commit> - desfaz alteracoes do commit especificado
+
+git reset HEAD~1 <commit>  -resetar para um determinado commit
+
+git reset --hard <commit> reseta e remove todas alteracoes - CUIDADO se ja publicado
