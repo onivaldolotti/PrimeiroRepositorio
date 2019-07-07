@@ -1,3 +1,11 @@
 exercicio BRANCH
+<<<<<<< HEAD
 
 inserindo mais uma linha
+=======
+<<<<<<< HEAD
+inserindo nova linha
+=======
+inserindo nova linha
+>>>>>>> novaBranch
+>>>>>>> d3d44b02aae0486a298f06e9d3a8f22d1fa8fd84
