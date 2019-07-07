@@ -1,2 +1,6 @@
 exercicio BRANCH
+<<<<<<< HEAD
 inserindo nova linha
+=======
+inserindo nova linha
+>>>>>>> novaBranch
