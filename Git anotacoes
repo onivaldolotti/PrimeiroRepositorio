@@ -20,7 +20,8 @@ git add . > adiciona todos os arquivos de uma vez
 
 git remote >
 
-GIT WORKFLOW
+GIT WORKFLOW----------
+
 -editar
 -add
 -Commitar
@@ -45,3 +46,56 @@ git revert <commit> - desfaz alteracoes do commit especificado
 git reset HEAD~1 <commit>  -resetar para um determinado commit
 
 git reset --hard <commit> reseta e remove todas alteracoes - CUIDADO se ja publicado
+
+BRANCH ---------
+
+-é uma lista de commits.
+-Representa ramificaçoes no repositorio.
+-muito util para trabalhos colaborativos.
+-Branchs de desenvolvimento facilitam o controle.
+-Branch master é a padrão.
+
+git branch > mostra a branch atual
+
+git branch < nova_branch> - cria uma nova BRANCH
+
+git branch -d <branch> - excluir uma branch
+
+git checkout <branch> - muda para a BRANCH
+
+-Seu repositorio passa a ter os commits que a branch possui e novos commits serão adicionados à ela.
+
+Git MERGE ------------
+
+git merge <branch>
+
+-Aplicar os commits de uma branch na branch atual.
+-Encontra um commit comum(base) entra as branchs e aplica todos os commits que a branch atual nao possui.
+-Caso exista commits na branch atual que nao estao na outra, sera criado um commit de merge.
+
+Git Rebase -------------
+
+git rebase <branch>
+
+-Semelhante ao Merge porem e diferente na ordem de aplicar os commtis.
+-No Rebase, os seus commits na frente da base sao removidos temporariamente, os commits de outra branch sao aplicados na sua branch e por fim seus commits sao aplicados um a um.
+-Pode acontecer conflitos que serao resolvidos para cada commit.
+
+Git FETCH -------------
+
+git fetch
+
+-baixa as atualizacoes do remote porem nao aplica elas no repositorio.
+-Permite fazer o rebase de uma branch em vez de fazer o merge.
+-Pull = Fetch + Merge.
+-Fetch e Rebase e melhor para manter historico do desenvolvimento.
+
+TAG -------------------
+
+-Uitl para definir versoes estaveis do projeto.
+-Semelhante a Branch porem nao recebe mais commits.
+-Guarda um estado do repositorio.
+
+git tag [nome da tag]
+
+git push <remote><tag>
